@@ -1,5 +1,8 @@
 torch==2.0.0
 torchaudio==2.0.1
 torchvision==0.15.1
+torchtext==0.15.1
+
 numpy==1.24.3
+
 pytest==7.3.1
