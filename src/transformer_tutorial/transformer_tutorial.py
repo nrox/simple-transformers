@@ -8,10 +8,10 @@ from tempfile import TemporaryDirectory
 import torch
 from torch import nn
 
-from src.data import DataPreprocessor
-from src.evaluation import evaluate
-from src.model import TransformerModel
-from src.training import train
+from src.transformer_tutorial.data import DataPreprocessor
+from src.transformer_tutorial.evaluation import evaluate
+from src.transformer_tutorial.model import TransformerModel
+from src.transformer_tutorial.training import train
 
 bptt = 35
 

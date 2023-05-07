@@ -1,17 +1,10 @@
-import math
-import os
-from tempfile import TemporaryDirectory
 from typing import Any
 
 import torch
 from torch import nn, Tensor
-from torchtext.data.utils import get_tokenizer
-from torchtext.datasets import WikiText2
-from torchtext.vocab import build_vocab_from_iterator
 
-from src.data import batchify, get_batch, data_process
-from src.model import TransformerModel, generate_square_subsequent_mask
-from src.training import train
+from src.transformer_tutorial.data import get_batch
+from src.transformer_tutorial.model import generate_square_subsequent_mask
 
 
 def evaluate(model: nn.Module,

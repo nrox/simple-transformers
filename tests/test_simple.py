@@ -25,3 +25,15 @@ def test_3():
     tgt = torch.rand(20, 32, 512)
     out = transformer_decoder(tgt, memory)
     print(out)
+
+
+def test_4():
+    x = torch.tensor([[1, 2, 3, 4], [10, 20, 30, 40]])
+    torch.unsqueeze(x, 0)
+    x = torch.unsqueeze(x, 0)
+    print('\n')
+    print(x)
+
+    x = torch.unsqueeze(x, -2)
+    print('\n')
+    print(x)

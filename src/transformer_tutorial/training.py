@@ -5,8 +5,8 @@ from typing import Any
 import torch
 from torch import nn, Tensor
 
-from src.data import get_batch
-from src.model import generate_square_subsequent_mask
+from src.transformer_tutorial.data import get_batch
+from src.transformer_tutorial.model import generate_square_subsequent_mask
 
 
 def train(model: nn.Module,
